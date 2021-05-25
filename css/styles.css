@@ -1,0 +1,90 @@
+body{
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    line-height: 2;
+    background-color: #161625!important;
+  }
+
+#heading{
+    padding: 80px;
+    padding-bottom: 30px;
+    color: #fff;
+    background-color: #0a1931;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.des{
+    padding-top: 10px;
+    font-size: 2rem;
+}
+
+/* hr{
+    border: none;
+    background-color: #fff;
+    height: 0.5px;
+    width: 30%;
+    margin-bottom: 50px;
+} */
+
+.inside-head{
+    padding-top: 30px;
+    font-size: 3rem;
+    color: #fff;
+}
+
+#world{
+    padding: 60px;
+}
+
+.data-col{
+    padding: 3% 2%;
+    margin: auto;
+}
+
+.card-text{
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.card-header{
+    font-size: 1.2rem;
+    white-space: nowrap;
+    /* border: solid #fff 2px; */
+}
+
+/* .card-body{
+    border: solid #fff 2px;
+} */
+
+.total-cases{
+    background-color:#161625!important;
+    color: #e53e3e;
+}
+
+.recovered{
+    background-color: #161625!important;
+    color: #28a745;
+}
+
+.deaths{
+    background-color: #161625!important;
+    color: #6c757d;
+}
+
+.cases-today{
+    background-color: #161625!important;
+    color:#e53e3e;
+}
+
+.deaths-today{
+    background-color: #161625!important;
+    color:#6c757d;
+}
