@@ -27,7 +27,7 @@ body{
   .alert{
       font-size: 1.5rem;
       padding: 10px;
-      margin: 10px 50px;
+      margin: 10px;
       color: #000;
   }
 
@@ -179,6 +179,10 @@ body{
 
 #others{
     margin-bottom: 50px;
+}
+
+.margin-fix{
+    margin: 0 80px;
 }
 
 /* ------------------------------------------section-others-end--------------------------------------- */
