@@ -12,6 +12,25 @@ body{
       display: none;
   }
 
+  .red{
+      background-color: #e53e3e;
+  }
+
+  .green{
+      background-color: #28a745;
+  }
+
+  .orange{
+      background-color: orangered;
+  }
+
+  .alert{
+      font-size: 1.5rem;
+      padding: 10px;
+      margin: 10px 50px;
+      color: #000;
+  }
+
 /* ------------------------------------------section-heading-start------------------------------------ */
 
 #heading{
@@ -152,6 +171,14 @@ body{
 
 .fix{
     padding-bottom:200px;
+}
+
+.other-fix{
+    margin: 20px;
+}
+
+#others{
+    margin-bottom: 50px;
 }
 
 /* ------------------------------------------section-others-end--------------------------------------- */
