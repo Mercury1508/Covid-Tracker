@@ -66,14 +66,14 @@ let state;
 const TotalCasesDataCountry=document.getElementById("total-cases-data-country");
 const DeathsDataCountry=document.getElementById("deaths-data-country");
 const RecoveredDataCountry=document.getElementById("recovered-data-country");
-const CasesTodayDataCountry=document.getElementById("cases-today-data-country");
-const DeathsTodayDataCountry=document.getElementById("deaths-today-data-country");
+// const CasesTodayDataCountry=document.getElementById("cases-today-data-country");
+// const DeathsTodayDataCountry=document.getElementById("deaths-today-data-country");
 
 const TotalCasesDataState=document.getElementById("total-cases-data-state");
 const DeathsDataState=document.getElementById("deaths-data-state");
 const RecoveredDataState=document.getElementById("recovered-data-state");
-const CasesTodayDataState=document.getElementById("cases-today-data-state");
-const DeathsTodayDataState=document.getElementById("deaths-today-data-state");
+// const CasesTodayDataState=document.getElementById("cases-today-data-state");
+// const DeathsTodayDataState=document.getElementById("deaths-today-data-state");
 
 
 
@@ -124,8 +124,8 @@ async function SetCountryData(ctry){
   TotalCasesDataCountry.innerHTML = JsData.response[i].cases.total;
   DeathsDataCountry.innerHTML = JsData.response[i].deaths.total;
   RecoveredDataCountry.innerHTML = JsData.response[i].cases.recovered;
-  CasesTodayDataCountry.innerHTML = JsData.response[i].cases.new;
-  DeathsTodayDataCountry.innerHTML = JsData.response[i].deaths.new;
+  // CasesTodayDataCountry.innerHTML = JsData.response[i].cases.new;
+  // DeathsTodayDataCountry.innerHTML = JsData.response[i].deaths.new;
 }
 
 async function SetStateData(state,x){
@@ -143,8 +143,8 @@ async function SetStateData(state,x){
     TotalCasesDataState.innerHTML = JsData.state_wise[state].confirmed;
     DeathsDataState.innerHTML = JsData.state_wise[state].deaths;
     RecoveredDataState.innerHTML = JsData.state_wise[state].recovered;
-    CasesTodayDataState.innerHTML = "+"+JsData.state_wise[state].deltaconfirmed;
-    DeathsTodayDataState.innerHTML = "+"+JsData.state_wise[state].deltadeaths;
+    // CasesTodayDataState.innerHTML = "+"+JsData.state_wise[state].deltaconfirmed;
+    // DeathsTodayDataState.innerHTML = "+"+JsData.state_wise[state].deltadeaths;
 
     document.getElementById("other-alert").classList.remove("green");
     document.getElementById("other-alert").classList.remove("red");
@@ -171,8 +171,8 @@ async function SetStateData(state,x){
     TotalCasesDataOther.innerHTML = JsData.state_wise[state].confirmed;
     DeathsDataOther.innerHTML = JsData.state_wise[state].deaths;
     RecoveredDataOther.innerHTML = JsData.state_wise[state].recovered;
-    CasesTodayDataOther.innerHTML = "+"+JsData.state_wise[state].deltaconfirmed;
-    DeathsTodayDataOther.innerHTML = "+"+JsData.state_wise[state].deltadeaths;
+    // CasesTodayDataOther.innerHTML = "+"+JsData.state_wise[state].deltaconfirmed;
+    // DeathsTodayDataOther.innerHTML = "+"+JsData.state_wise[state].deltadeaths;
 
     document.getElementById("other-alert").classList.remove("green");
     document.getElementById("other-alert").classList.remove("red");
@@ -207,8 +207,8 @@ let val;
 const TotalCasesDataOther=document.getElementById("total-cases-data-other");
 const DeathsDataOther=document.getElementById("deaths-data-other");
 const RecoveredDataOther=document.getElementById("recovered-data-other");
-const CasesTodayDataOther=document.getElementById("cases-today-data-other");
-const DeathsTodayDataOther=document.getElementById("deaths-today-data-other");
+// const CasesTodayDataOther=document.getElementById("cases-today-data-other");
+// const DeathsTodayDataOther=document.getElementById("deaths-today-data-other");
 
 const OtherStateHere= document.getElementById("other-state-here");
 
