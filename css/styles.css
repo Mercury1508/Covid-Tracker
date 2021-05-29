@@ -1,90 +1,169 @@
+
 body{
     font-family: "Montserrat";
     font-weight: 400;
     text-align: center;
     margin: 0;
     line-height: 2;
-    background-color: #161625!important;
+    background-color: #333c4a;
+  }
+  
+  .hide{
+      display: none;
   }
 
+/* ------------------------------------------section-heading-start------------------------------------ */
+
 #heading{
-    padding: 80px;
-    padding-bottom: 30px;
+    padding: 60px 20px 30px 20px;
     color: #fff;
-    background-color: #0a1931;
+    background-color: #141829;
 }
 
-h1{
+.head{
     font-size: 3.5rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .des{
-    padding-top: 10px;
+    padding: 50px 0 20px;
     font-size: 2rem;
 }
 
-/* hr{
-    border: none;
-    background-color: #fff;
-    height: 0.5px;
-    width: 30%;
-    margin-bottom: 50px;
-} */
-
-.inside-head{
-    padding-top: 30px;
-    font-size: 3rem;
-    color: #fff;
+.data-col{
+    padding: 20px 40px;
 }
+
+.links{
+    background: hsl(340deg 100% 32%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+}
+.front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: hsl(345deg 100% 47%);
+    color: white;
+    transform: translateY(-6px);
+}
+
+.links:active .front {
+    transform: translateY(-2px);
+}
+
+.links:focus:not(:focus-visible){
+    outline: none;
+}
+
+/* ------------------------------------------section-heading-end-------------------------------------- */
+
+
+
+/* ------------------------------------------section-world-start-------------------------------------- */
 
 #world{
-    padding: 60px;
+    padding: 30px 80px 40px;
 }
 
-.data-col{
-    padding: 3% 2%;
-    margin: auto;
-}
-
-.card-text{
+.inside-head{
+    padding: 20px 0 30px;
+    font-family: "Montserrat light";
+    font-size: 3rem;
+    color: #fff;
     font-weight: 600;
-    font-size: 1.4rem;
-    letter-spacing: 1px;
-    white-space: nowrap;
 }
 
-.card-header{
-    font-size: 1.2rem;
-    white-space: nowrap;
-    /* border: solid #fff 2px; */
+.case-full:hover,.recovered-full:hover,.death-full:hover{
+
+    background-color: #141829;
 }
 
-/* .card-body{
-    border: solid #fff 2px;
-} */
-
-.total-cases{
-    background-color:#161625!important;
+.total-cases-heading,.total-cases{
     color: #e53e3e;
 }
 
-.recovered{
-    background-color: #161625!important;
+.recovered-heading,.recovered{
     color: #28a745;
 }
 
-.deaths{
-    background-color: #161625!important;
+.deaths-heading,.deaths{
     color: #6c757d;
 }
 
-.cases-today{
-    background-color: #161625!important;
-    color:#e53e3e;
+.total-cases,.recovered,.deaths{
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.125;
 }
 
-.deaths-today{
-    background-color: #161625!important;
-    color:#6c757d;
+.total-cases-heading,.recovered-heading,.deaths-heading{
+    display: block;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding: 20px 0;
+    text-transform: uppercase;
 }
+
+.today{
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+
+.remove{
+    color: #333c4a;
+}
+
+
+/* ------------------------------------------section-world-end---------------------------------------- */
+
+
+
+/* ------------------------------------------section-location-start----------------------------------- */
+
+#location{
+    padding: 30px 80px 40px;
+}
+
+.locate{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 20px 0;
+}
+
+.inside-locate{
+    padding: 20px 0 30px;
+    font-family: "Montserrat light";
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* ------------------------------------------section-location-end------------------------------------- */
+
+
+
+/* ------------------------------------------section-others-start------------------------------------- */
+
+.fix{
+    padding-bottom:200px;
+}
+
+/* ------------------------------------------section-others-end--------------------------------------- */
+
+
+
+/* ------------------------------------------section-footer-start------------------------------------- */
+
+#ending{
+    padding: 5px 0;
+    background-color: #141829;
+    color: #fff;
+}
+
+/* ------------------------------------------section-footer-end--------------------------------------- */
