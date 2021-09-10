@@ -43,10 +43,10 @@
             <button class="links" id="world-link" ><span class="front">Stats of The World</span></a>
           </div>
           <div class="data-col col-lg-4 col-md-4 col-sm-12">
-            <button class="links" id="location-link"><span class="front">Check Stats of Your Location</span></a>
+            <button class="links" id="location-link"><span class="front">Check Stats of Any Country</span></a>
           </div>
           <div class="data-col col-lg-4 col-md-4 col-sm-12">
-            <button class="links" id="others-link" ><span class="front">Check Stats of Any State/UT</span></a>
+            <button class="links" id="others-link" ><span class="front">Stats of India</span></a>
           </div>
         </div>
     </section>
@@ -145,6 +145,28 @@
 
     <section id="others" class="hide fix">
       <p class="locate">
+        <h2 class="inside-head">India Data</h2>
+        <nav class="level">
+          <div class="level-item case-full">
+            <div>
+            <p class="total-cases-heading">Total Cases</p>
+            <p class="total-cases" id="total-cases-data-india">Updating...</p>
+            </div>
+          </div>
+          <div class="level-item death-full">
+            <div>
+            <p class="deaths-heading">Total Deaths</p>
+            <p class="deaths" id="deaths-data-india">Updating...</p>
+            </div>
+          </div>
+          <div class="level-item recovered-full">
+            <div>
+            <p class="recovered-heading">Recovered</p>
+            <p class="recovered" id="recovered-data-india">Updating...</p>
+            </div>
+          </div>
+        </nav>
+        <p class="white">Check stats of any Indian state/UT</p>
         <select name="state-data" id="other-state" class="state-list">
           <option value="selected" selected>Choose state/union territory</option>
           <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
@@ -184,7 +206,7 @@
           <option value="Uttarakhand">Uttarakhand</option>
           <option value="West Bengal">West Bengal</option>
         </select>
-        <button class="links other-fix" id="other-link"><span class="front">Get Data</span></button>
+        <button class="links other-fix" id="other-link-button"><span class="front">Get Data</span></button>
       </p>
       <h2 class="inside-locate" id="other-state-here"></h2>
       <section id="other-level" class="hide">
@@ -193,21 +215,18 @@
             <div>
             <p class="total-cases-heading">Total Cases</p>
             <p class="total-cases" id="total-cases-data-other">Updating...</p>
-            <!-- <p class="total-cases today" id="cases-today-data-other">Updating...</p> -->
             </div>
           </div>
           <div class="level-item death-full">
             <div>
             <p class="deaths-heading">Total Deaths</p>
             <p class="deaths" id="deaths-data-other">Updating...</p>
-            <!-- <p class="deaths today" id="deaths-today-data-other">Updating...</p> -->
             </div>
           </div>
           <div class="level-item recovered-full">
             <div>
             <p class="recovered-heading">Recovered</p>
             <p class="recovered" id="recovered-data-other">Updating...</p>
-            <!-- <p class="today remove">.</p> -->
             </div>
           </div>
         </nav>
@@ -218,7 +237,7 @@
     <!-- others end -->
 
     <section id="ending">
-      <p>Made by Hriday Garg 😎</p>
+      <p>Made by Hriday Garg & Parthiv Sarkar</p>
     </section>
 
     <script src="index.js" charset="utf-8"></script>
