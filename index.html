@@ -1,11 +1,9 @@
-<!-- Covid Website -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
@@ -28,199 +26,57 @@
 
     <!-- bulma -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-
-    <title>Covid-19 Tracker</title>
+    <title>First Page</title>
 </head>
 <body>
-
-    <!-- heading start -->
-
+    <!-- Heading St. -->
     <section id="heading">
+        
         <h1 class="head">Covid-19 Tracker</h1>
-        <p class="des">Get live Covid-19 data for better decision making in this rough time.</p>
-        <div class="row">
-          <div class="data-col col-lg-4 col-md-4 col-sm-12">
-            <button class="links" id="world-link" ><span class="front">Stats of The World</span></a>
-          </div>
-          <div class="data-col col-lg-4 col-md-4 col-sm-12">
-            <button class="links" id="location-link"><span class="front">Check Stats of Your Location</span></a>
-          </div>
-          <div class="data-col col-lg-4 col-md-4 col-sm-12">
-            <button class="links" id="others-link" ><span class="front">Check Stats of Any State/UT</span></a>
-          </div>
-        </div>
+        <p class="des">“Better to wear a mask than a ventilator; better to stay at home than in an ICU.”</p>
+        
+        <p style="font-size: larger;">To check Covid related data <br><i class="fas fa-arrow-right"></i> <a href="data.html" style="font-size: xx-large;">Click here</a> <i class="fas fa-arrow-left"></i></p>
     </section>
+    <!-- Heading Ed -->
 
-    <!-- heading end -->
-
-    <!-- world start -->
-
+    <!-- Description St. -->
     <section id="world">
-      <h2 class="inside-head">World Data</h2>
-          <nav class="level">
-            <div class="level-item case-full">
-              <div>
-              <p class="total-cases-heading">Total Cases</p>
-              <p class="total-cases" id="total-cases-data-world">Updating...</p>
-              <p class="total-cases today" id="cases-today-data-world">Updating...</p>
-              </div>
-            </div>
-            <div class="level-item death-full">
-              <div>
-              <p class="deaths-heading">Total Deaths</p>
-              <p class="deaths" id="deaths-data-world">Updating...</p>
-              <p class="deaths today" id="deaths-today-data-world">Updating...</p>
-              </div>
-            </div>
-            <div class="level-item recovered-full">
-              <div>
-              <p class="recovered-heading">Recovered</p>
-              <p class="recovered" id="recovered-data-world">Updating...</p>
-              <p class="today remove">.</p>
-              </div>
-            </div>
-          </nav> 
-    </section>
+        <h2 class="inside-head" style="text-decoration: underline; color:aqua">A little Information</h2>
+            <p class="inside-head" style="font-size: x-large;">
+                Coronavirus disease 2019 (COVID-19) is a contagious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). 
+                <br>
+                
+                The first known case was identified in Wuhan, China, in December 2019. 
+                <br>
+                The disease has since spread worldwide, leading to an ongoing pandemic.
+                <br>
 
-    <!-- world end -->
+            Symptoms of COVID-19 are variable, but often include fever,cough, headache,fatigue, breathing difficulties, and loss of smell and taste. 
+            <br>    
+            Symptoms may begin one to fourteen days after exposure to the virus.
+            <br>
+             At least a third of people who are infected do not develop noticeable symptoms. 
+             <br>
+             Of those people who develop symptoms noticeable enough to be classed as patients, most (81%) develop mild to moderate symptoms (up to mild pneumonia), while 14% develop severe symptoms (dyspnea, hypoxia, or more than 50% lung involvement on imaging), and 5% suffer critical symptoms (respiratory failure, shock, or multiorgan dysfunction).
+            </p>
 
-    <!-- location start -->
-
-    <section id="location" class="hide">
-      <p class="locate" id="location-here"></p>
-      <h2 class="inside-locate" id="country-here"></h2>
-          <nav class="level">
-            <div class="level-item case-full">
-              <div>
-              <p class="total-cases-heading">Total Cases</p>
-              <p class="total-cases" id="total-cases-data-country">Updating...</p>
-              <!-- <p class="total-cases today" id="cases-today-data-country">Updating...</p> -->
-              </div>
-            </div>
-            <div class="level-item death-full">
-              <div>
-              <p class="deaths-heading">Total Deaths</p>
-              <p class="deaths" id="deaths-data-country">Updating...</p>
-              <!-- <p class="deaths today" id="deaths-today-data-country">Updating...</p> -->
-              </div>
-            </div>
-            <div class="level-item recovered-full">
-              <div>
-              <p class="recovered-heading">Recovered</p>
-              <p class="recovered" id="recovered-data-country">Updating...</p>
-              <!-- <p class="today remove">.</p> -->
-              </div>
-            </div>
-          </nav>
-      <h2 class="inside-locate" id="state-here"></h2>
-          <nav class="level">
-            <div class="level-item case-full">
-              <div>
-              <p class="total-cases-heading">Total Cases</p>
-              <p class="total-cases" id="total-cases-data-state">Updating...</p>
-              <!-- <p class="total-cases today" id="cases-today-data-state">Updating...</p> -->
-              </div>
-            </div>
-            <div class="level-item death-full">
-              <div>
-              <p class="deaths-heading">Total Deaths</p>
-              <p class="deaths" id="deaths-data-state">Updating...</p>
-              <!-- <p class="deaths today" id="deaths-today-data-state">Updating...</p> -->
-              </div>
-            </div>
-            <div class="level-item recovered-full">
-              <div>
-              <p class="recovered-heading">Recovered</p>
-              <p class="recovered" id="recovered-data-state">Updating...</p>
-              <!-- <p class="today remove">.</p> -->
-              </div>
-            </div>
-          </nav>
-          <p class="alert" id="location-alert"></p>
-    </section>
-
-    <!-- location end -->
-
-    <!-- others start -->
-
-    <section id="others" class="hide fix">
-      <p class="locate">
-        <select name="state-data" id="other-state" class="state-list">
-          <option value="selected" selected>Choose state/union territory</option>
-          <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-          <option value="Andhra Pradesh">Andhra Pradesh</option>
-          <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-          <option value="Assam">Assam</option>
-          <option value="Bihar">Bihar</option>
-          <option value="Chandigarh">Chandigarh</option>
-          <option value="Chhattisgarh">Chhattisgarh</option>
-          <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
-          <option value="Delhi">Delhi</option>
-          <option value="Goa">Goa</option>
-          <option value="Gujarat">Gujarat</option>
-          <option value="Haryana">Haryana</option>
-          <option value="Himachal Pradesh">Himachal Pradesh</option>
-          <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-          <option value="Jharkhand">Jharkhand</option>
-          <option value="Karnataka">Karnataka</option>
-          <option value="Kerala">Kerala</option>
-          <option value="Ladakh">Ladakh</option>
-          <option value="Lakshadweep">Lakshadweep</option>
-          <option value="Madhya Pradesh">Madhya Pradesh</option>
-          <option value="Maharashtra">Maharashtra</option>
-          <option value="Manipur">Manipur</option>
-          <option value="Meghalaya">Meghalaya</option>
-          <option value="Mizoram">Mizoram</option>
-          <option value="Nagaland">Nagaland</option>
-          <option value="Odisha">Odisha</option>
-          <option value="Puducherry">Puducherry</option>
-          <option value="Punjab">Punjab</option>
-          <option value="Rajasthan">Rajasthan</option>
-          <option value="Sikkim">Sikkim</option>
-          <option value="Tamil Nadu">Tamil Nadu</option>
-          <option value="Telangana">Telangana</option>
-          <option value="Tripura">Tripura</option>
-          <option value="Uttar Pradesh">Uttar Pradesh</option>
-          <option value="Uttarakhand">Uttarakhand</option>
-          <option value="West Bengal">West Bengal</option>
-        </select>
-        <button class="links other-fix" id="other-link"><span class="front">Get Data</span></button>
-      </p>
-      <h2 class="inside-locate" id="other-state-here"></h2>
-      <section id="other-level" class="hide">
-        <nav class="level">
-          <div class="level-item case-full">
-            <div>
-            <p class="total-cases-heading">Total Cases</p>
-            <p class="total-cases" id="total-cases-data-other">Updating...</p>
-            <!-- <p class="total-cases today" id="cases-today-data-other">Updating...</p> -->
-            </div>
-          </div>
-          <div class="level-item death-full">
-            <div>
-            <p class="deaths-heading">Total Deaths</p>
-            <p class="deaths" id="deaths-data-other">Updating...</p>
-            <!-- <p class="deaths today" id="deaths-today-data-other">Updating...</p> -->
-            </div>
-          </div>
-          <div class="level-item recovered-full">
-            <div>
-            <p class="recovered-heading">Recovered</p>
-            <p class="recovered" id="recovered-data-other">Updating...</p>
-            <!-- <p class="today remove">.</p> -->
-            </div>
-          </div>
-        </nav>
-        <p class="alert margin-fix" id="other-alert"></p>
+            <h2 class="inside-head" style="text-decoration: underline; color:aqua">Precaution</h2>
+            <p class="inside-head" style="font-size: x-large;">
+                Preventive measures include physical or social distancing, quarantining, ventilation of indoor spaces, covering coughs and sneezes, hand washing, and keeping unwashed hands away from the face. 
+                <br>
+                The use of face masks or coverings has been recommended in public settings to minimise the risk of transmissions.
+            </p>
       </section>
-    </section>
+      <!-- Description End -->
 
-    <!-- others end -->
+      <!-- Footer St. -->
+      <section id="ending">
+          <img src="https://spider.istebits.com/assets/img/iste.webp" alt="ISTE" width="80px">
+          <p style="text-decoration: underline;">SPIDER 2.0 WEB CRAWLER</p>
+          <br>
+        <p>Made by Hriday Garg & Parthiv Sarkar</p>
+      </section>
 
-    <section id="ending">
-      <p>Made by Hriday Garg 😎</p>
-    </section>
-
-    <script src="index.js" charset="utf-8"></script>
+      <script src="index.js" charset="utf-8"></script>
 </body>
 </html>
