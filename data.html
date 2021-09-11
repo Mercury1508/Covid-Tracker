@@ -84,64 +84,265 @@
 
     <!-- world end -->
 
-    <!-- location start -->
+    <!-- country start -->
 
-    <section id="location" class="hide">
-      <p class="locate" id="location-here"></p>
-      <h2 class="inside-locate" id="country-here"></h2>
-          <nav class="level">
-            <div class="level-item case-full">
-              <div>
-              <p class="total-cases-heading">Total Cases</p>
-              <p class="total-cases" id="total-cases-data-country">Updating...</p>
-              <!-- <p class="total-cases today" id="cases-today-data-country">Updating...</p> -->
-              </div>
+    <section id="location" class="hide fix">
+        <select name="country-data" id="country" class="country-list">
+          <option value="selected" selected>Choose country</option>
+          <option value="95">Afghanistan</option>
+          <option value="94">Albania</option>
+          <option value="87">Algeria</option>
+          <option value="153">Andorra</option>
+          <option value="122">Angola</option>
+          <option value="207">Anguilla</option>
+          <option value="196">Antigua and Barbuda</option>
+          <option value="8">Argentina</option>
+          <option value="82">Armenia</option>
+          <option value="154">Aruba</option>
+          <option value="116">Australia</option>
+          <option value="44">Austria</option>
+          <option value="60">Azerbaijan</option>
+          <option value="144">Bahamas</option>
+          <option value="79">Bahrain</option>
+          <option value="27">Bangladesh</option>
+          <option value="177">Barbados</option>
+          <option value="53">Belarus</option>
+          <option value="29">Belgium</option>
+          <option value="148">Belize</option>
+          <option value="143">Benin</option>
+          <option value="188">Bermuda</option>
+          <option value="193">Bhutan</option>
+          <option value="54">Bolivia</option>
+          <option value="85">Bosnia and Herzegovina</option>
+          <option value="92">Botswana</option>
+          <option value="2">Brazil</option>
+          <option value="192">British Virgin Islands</option>
+          <option value="184">Brunei</option>
+          <option value="57">Bulgaria</option>
+          <option value="158">Burkina Faso</option>
+          <option value="157">Burundi</option>
+          <option value="132">Cabo Verde</option>
+          <option value="106">Cambodia</option>
+          <option value="110">Cameroon</option>
+          <option value="26">Canada</option>
+          <option value="165">CAR</option>
+          <option value="203">Cayman Islands</option>
+          <option value="181">Chad</option>
+          <option value="166">Channel Islands</option>
+          <option value="24">Chile</option>
+          <option value="108">China</option>
+          <option value="9">Colombia</option>
+          <option value="182">Comoros</option>
+          <option value="259">Congo</option>
+          <option value="55">Costa Rica</option>
+          <option value="65">Croatia</option>
+          <option value="42">Cuba</option>
+          <option value="152">Curaçao</option>
+          <option value="105">Cyprus</option>
+          <option value="23">Czech Republic</option>
+          <option value="69">Denmark</option>
+          <option value="204">Diamond Princess</option>
+          <option value="163">Djibouti</option>
+          <option value="195">Dominica</option>
+          <option value="68">Dominican Republic</option>
+          <option value="119">DRC</option>
+          <option value="52">Ecuador</option>
+          <option value="76">Egypt</option>
+          <option value="107">El Salvador</option>
+          <option value="168">Equatorial Guinea</option>
+          <option value="173">Eritrea</option>
+          <option value="98">Estonia</option>
+          <option value="125">Eswatini</option>
+          <option value="73">Ethiopia</option>
+          <option value="202">Faeroe Islands</option>
+          <option value="209">Falkland Islands</option>
+          <option value="123">Fiji</option>
+          <option value="99">Finland</option>
+          <option value="5">France</option>
+          <option value="130">French Guiana</option>
+          <option value="127">French Polynesia</option>
+          <option value="138">Gabon</option>
+          <option value="169">Gambia</option>
+          <option value="49">Georgia</option>
+          <option value="13">Germany</option>
+          <option value="102">Ghana</option>
+          <option value="179">Gibraltar</option>
+          <option value="47">Greece</option>
+          <option value="206">Greenland</option>
+          <option value="197">Grenada</option>
+          <option value="121">Guadeloupe</option>
+          <option value="51">Guatemala</option>
+          <option value="135">Guinea</option>
+          <option value="175">Guinea-Bissau</option>
+          <option value="137">Guyana</option>
+          <option value="140">Haiti</option>
+          <option value="70">Honduras</option>
+          <option value="162">Hong Kong</option>
+          <option value="37">Hungary</option>
+          <option value="166">Iceland</option>
+          <option value="1">India</option>
+          <option value="12">Indonesia</option>
+          <option value="7">Iran</option>
+          <option value="21">Iraq</option>
+          <option value="67">Ireland</option>
+          <option value="172">Isle of Man</option>
+          <option value="31">Israel</option>
+          <option value="11">Italy</option>
+          <option value="118">Ivory Coast</option>
+          <option value="113">Jamaica</option>
+          <option value="25">Japan</option>
+          <option value="40">Jordan</option>
+          <option value="36">Kazakhstan</option>
+          <option value="83">Kenya</option>
+          <option value="62">Kuwait</option>
+          <option value="90">Kyrgyzstan</option>
+          <option value="150">Laos</option>
+          <option value="97">Latvia</option>
+          <option value="46">Lebanon</option>
+          <option value="156">Lesotho</option>
+          <option value="178">Liberia</option>
+          <option value="72">Libya</option>
+          <option value="187">Liechtenstein</option>
+          <option value="74">Lithuania</option>
+          <option value="112">Luxembourg</option>
+          <option value="210">Macao</option>
+          <option value="126">Madagascar</option>
+          <option value="117">Malawi</option>
+          <option value="22">Malaysia</option>
+          <option value="111">Maldives</option>
+          <option value="155">Mali</option>
+          <option value="131">Malta</option>
+          <option value="218">Marshall Islands</option>
+          <option value="128">Martinique</option>
+          <option value="133">Mauritania</option>
+          <option value="160">Mauritius</option>
+          <option value="142">Mayotte</option>
+          <option value="14">Mexico</option>
+          <option value="222">Micronesia</option>
+          <option value="78">Moldova</option>
+          <option value="189">Monaco</option>
+          <option value="81">Mongolia</option>
+          <option value="104">Montenegro</option>
+          <option value="212">Montserrat</option>
+          <option value="35">Morocco</option>
+          <option value="96">Mozambique</option>
+          <option value="216">MS Zaandam</option>
+          <option value="61">Myanmar</option>
+          <option value="101">Namibia</option>
+          <option value="41">Nepal</option>
+          <option value="20">Netherlands</option>
+          <option value="208">New Caledonia</option>
+          <option value="185">New Zealand</option>
+          <option value="161">Nicaragua</option>
+          <option value="176">Niger</option>
+          <option value="88">Nigeria</option>
+          <option value="89">North Macedonia</option>
+          <option value="91">Norway</option>
+          <option value="75">Oman</option>
+          <option value="30">Pakistan</option>
+          <option value="220">Palau</option>
+          <option value="66">Palestine</option>
+          <option value="58">Panama</option>
+          <option value="145">Papua New Guinea</option>
+          <option value="59">Paraguay</option>
+          <option value="19">Peru</option>
+          <option value="18">Philippines</option>
+          <option value="15">Poland</option>
+          <option value="34">Portugal</option>
+          <option value="84">Qatar</option>
+          <option value="120">Reunion</option>
+          <option value="33">Romania</option>
+          <option value="4">Russia</option>
+          <option value="109">Rwanda</option>
+          <option value="199">Saint Barthélemy</option>
+          <option value="221">Saint Helena, Ascension and Tristan da Cunha</option>
+          <option value="200">Saint Kitts and Nevis</option>
+          <option value="170">Saint Lucia</option>
+          <option value="186">Saint Martin</option>
+          <option value="211">Saint Pierre and Miquelon</option>
+          <option value="219">Samoa</option>
+          <option value="180">San Marino</option>
+          <option value="190">Sao Tome and Principe</option>
+          <option value="50">Saudi Arabia</option>
+          <option value="114">Senegal</option>
+          <option value="39">Serbia</option>
+          <option value="141">Seychelles</option>
+          <option value="174">Sierra Leone</option>
+          <option value="115">Singapore</option>
+          <option value="183">Sint Maarten</option>
+          <option value="63">Slovakia</option>
+          <option value="77">Slovenia</option>
+          <option value="214">Solomon Islands</option>
+          <option value="147">Somalia</option>
+          <option value="16">South Africa</option>
+          <option value="80">South Korea</option>
+          <option value="164">South Sudan</option>
+          <option value="10">Spain</option>
+          <option value="56">Sri Lanka</option>
+          <option value="194">St. Vincent Grenadines</option>
+          <option value="129">Sudan</option>
+          <option value="134">Suriname</option>
+          <option value="32">Sweden</option>
+          <option value="38">Switzerland</option>
+          <option value="136">Syria</option>
+          <option value="151">Taiwan</option>
+          <option value="149">Tajikistan</option>
+          <option value="201">Tanzania</option>
+          <option value="28">Thailand</option>
+          <option value="146">Timor-Leste</option>
+          <option value="139">Togo</option>
+          <option value="124">Trinidad and Tobago</option>
+          <option value="45">Tunisia</option>
+          <option value="6">Turkey</option>
+          <option value="191">Turks and Caicos</option>
+          <option value="43">UAE</option>
+          <option value="103">Uganda</option>
+          <option value="3">UK</option>
+          <option value="17">Ukraine</option>
+          <option value="64">Uruguay</option>
+          <option value="0">USA</option>
+          <option value="93">Uzbekistan</option>
+          <option value="217">Vanuatu</option>
+          <option value="213">Vatican City</option>
+          <option value="71">Venezuela</option>
+          <option value="48">Vietnam</option>
+          <option value="205">Wallis and Futuna</option>
+          <option value="215">Western Sahara</option>
+          <option value="171">Yemen</option>
+          <option value="86">Zambia</option>
+          <option value="100">Zimbabwe</option>
+        </select>
+        <button class="links other-fix" id="country-link-button"><span class="front">Get Data</span></button>
+        <h2 class="inside-locate" id="country-here"></h2>
+      <section id="country-level" class="hide">
+        <nav class="level">
+          <div class="level-item case-full">
+            <div>
+            <p class="total-cases-heading">Total Cases</p>
+            <p class="total-cases" id="total-cases-data-country">Updating...</p>
+            <p class="total-cases today" id="cases-today-data-country">Updating...</p>
             </div>
-            <div class="level-item death-full">
-              <div>
-              <p class="deaths-heading">Total Deaths</p>
-              <p class="deaths" id="deaths-data-country">Updating...</p>
-              <!-- <p class="deaths today" id="deaths-today-data-country">Updating...</p> -->
-              </div>
+          </div>
+          <div class="level-item death-full">
+            <div>
+            <p class="deaths-heading">Total Deaths</p>
+            <p class="deaths" id="deaths-data-country">Updating...</p>
+            <p class="deaths today" id="deaths-today-data-country">Updating...</p>
             </div>
-            <div class="level-item recovered-full">
-              <div>
-              <p class="recovered-heading">Recovered</p>
-              <p class="recovered" id="recovered-data-country">Updating...</p>
-              <!-- <p class="today remove">.</p> -->
-              </div>
+          </div>
+          <div class="level-item recovered-full">
+            <div>
+            <p class="recovered-heading">Recovered</p>
+            <p class="recovered" id="recovered-data-country">Updating...</p>
             </div>
-          </nav>
-      <h2 class="inside-locate" id="state-here"></h2>
-          <nav class="level">
-            <div class="level-item case-full">
-              <div>
-              <p class="total-cases-heading">Total Cases</p>
-              <p class="total-cases" id="total-cases-data-state">Updating...</p>
-              <!-- <p class="total-cases today" id="cases-today-data-state">Updating...</p> -->
-              </div>
-            </div>
-            <div class="level-item death-full">
-              <div>
-              <p class="deaths-heading">Total Deaths</p>
-              <p class="deaths" id="deaths-data-state">Updating...</p>
-              <!-- <p class="deaths today" id="deaths-today-data-state">Updating...</p> -->
-              </div>
-            </div>
-            <div class="level-item recovered-full">
-              <div>
-              <p class="recovered-heading">Recovered</p>
-              <p class="recovered" id="recovered-data-state">Updating...</p>
-              <!-- <p class="today remove">.</p> -->
-              </div>
-            </div>
-          </nav>
-          <p class="alert" id="location-alert"></p>
+          </div>
+        </nav>
+      </section>
     </section>
 
-    <!-- location end -->
+    <!-- country end -->
 
-    <!-- others start -->
+    <!-- india start -->
 
     <section id="others" class="hide fix">
       <p class="locate">
@@ -168,7 +369,7 @@
         </nav>
         <p class="white">Check stats of any Indian state/UT</p>
         <select name="state-data" id="other-state" class="state-list">
-          <option value="selected" selected>Choose state/union territory</option>
+          <option value="selected" selected>Choose any Indian State/UT</option>
           <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
           <option value="Andhra Pradesh">Andhra Pradesh</option>
           <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -234,7 +435,7 @@
       </section>
     </section>
 
-    <!-- others end -->
+    <!-- india end -->
 
     <section id="ending">
       <p>Made by Hriday Garg & Parthiv Sarkar</p>

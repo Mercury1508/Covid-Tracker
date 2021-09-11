@@ -9,6 +9,7 @@ document.getElementById("world-link").addEventListener("click",function(){
 })
 
 document.getElementById("location-link").addEventListener("click",function(){
+  SetWorldData(2);
   WorldSection.classList.add("hide");
   LocationSection.classList.remove("hide");
   OthersSection.classList.add("hide");
@@ -29,7 +30,7 @@ const RecoveredDataWorld=document.getElementById("recovered-data-world");
 const CasesTodayDataWorld=document.getElementById("cases-today-data-world");
 const DeathsTodayDataWorld=document.getElementById("deaths-today-data-world");
 
-async function SetWorldData(){
+async function SetWorldData(x){
   const JsonData = await fetch("https://corona-virus-world-and-india-data.p.rapidapi.com/api", {
     "method": "GET",
     "headers": {
@@ -44,11 +45,47 @@ DeathsDataWorld.innerHTML = JsData.world_total.total_deaths;
 RecoveredDataWorld.innerHTML = JsData.world_total.total_recovered;
 CasesTodayDataWorld.innerHTML = "+"+JsData.world_total.new_cases;
 DeathsTodayDataWorld.innerHTML = "+"+JsData.world_total.new_deaths;
+
+  if(x==2)
+  {
+    document.getElementById("country-link-button").addEventListener("click",function(){
+      list2=document.getElementById("country");
+      val2=list2.value;
+      country2=JsData.countries_stat[val2].country_name;
+      CountryHere.innerHTML = "Data of " + country2;
+      document.getElementById("country-level").classList.remove("hide");
+      document.getElementById("location").classList.remove("fix");
+      document.getElementById("location").classList.add("fix2");
+  
+      TotalCasesDataCountry.innerHTML = JsData.countries_stat[val2].cases;
+      DeathsDataCountry.innerHTML = JsData.countries_stat[val2].deaths;
+      RecoveredDataCountry.innerHTML = JsData.countries_stat[val2].total_recovered;
+      CasesTodayDataCountry.innerHTML = "+"+JsData.countries_stat[val2].new_cases;
+      DeathsTodayDataCountry.innerHTML = "+"+JsData.countries_stat[val2].new_deaths;
+    })
+  }
 }
 
-SetWorldData();
+SetWorldData(1);
 
 // ----------------------------------world data end-----------------------------------------
+
+// --------------------------------country data start---------------------------------------
+
+const TotalCasesDataCountry=document.getElementById("total-cases-data-country");
+const DeathsDataCountry=document.getElementById("deaths-data-country");
+const RecoveredDataCountry=document.getElementById("recovered-data-country");
+const CasesTodayDataCountry=document.getElementById("cases-today-data-country");
+const DeathsTodayDataCountry=document.getElementById("deaths-today-data-country");
+const CountryHere= document.getElementById("country-here");
+
+let list2;
+let val2;
+let country2;
+
+// ----------------------------------country data end---------------------------------------
+
+
 
 
 // ----------------------------------India data start------------------------------------
@@ -119,21 +156,5 @@ async function SetIndiaData(){
     })
 }
 
-// ----------------------------------location data end--------------------------------------
+// ----------------------------------India data end--------------------------------------
 
-
-// ----------------------------------Others data start--------------------------------------
-
-
-
-
-// document.getElementById("other-link").addEventListener("click",function(){
-//   list=document.getElementById("other-state");
-//   val=list.value;
-//   OtherStateHere.innerHTML = "Data of " + val;
-  // SetStateData(val,2);
-  // document.getElementById("other-level").classList.remove("hide");
-  // document.getElementById("others").classList.remove("fix");
-// })
-
-// ----------------------------------Others data end----------------------------------------

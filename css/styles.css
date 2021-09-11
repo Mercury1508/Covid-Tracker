@@ -147,7 +147,7 @@ body{
 /* ------------------------------------------section-location-start----------------------------------- */
 
 #location{
-    padding: 30px 50px 40px;
+    padding-top: 50px;
 }
 
 .locate{
@@ -172,6 +172,10 @@ body{
 
 .fix{
     padding-bottom:200px;
+}
+
+.fix2{
+    padding-bottom: 50px;
 }
 
 .white{
